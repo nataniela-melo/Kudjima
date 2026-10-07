@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="pt">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Loja · Kudjima</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Jost:wght@500;600;700;800&family=Source+Sans+3:wght@400;600;700&display=swap">
+<link rel="stylesheet" href="assets/style.css">
+<style>:root{padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}</style>
+</head>
+<body>
+<main id="page" data-page="shop" class="page">
+<section class="ptitle"><canvas id="ptCanvas"></canvas><div class="wrap">
+<nav class="crumbs" aria-label="Caminho"><a href="index.html">Início</a><span>/</span><span>Loja</span></nav>
+<h1>A nossa <em style="font-style:normal;color:var(--aqua)">loja</em></h1><p class="lead" style="margin-top:12px">Marisco e peixe por tamanho, com preço em kwanzas. Confirmamos peso e disponibilidade no WhatsApp.</p></div></section>
+<section style="padding-top:40px">
+  <div class="wrap shop">
+    <aside class="side" id="side" aria-label="Filtros">
+      <div style="display:flex;justify-content:space-between;align-items:center"><h3 style="font-size:1.3rem">Filtros</h3><button class="x fbtn" id="closeFilters" type="button" aria-label="Fechar filtros">✕</button></div>
+      <div><h4>Categorias</h4><div class="opts" id="cats"></div></div>
+      <div><h4>Preço até</h4><input class="range" id="price" type="range" min="1500"><div class="rangev"><span>1.500 Kz</span><span id="priceV"></span></div></div>
+      <div><h4>Lista</h4><label class="check"><input type="checkbox" id="onlyFav">Só os meus favoritos</label></div>
+      <button class="btn btn-line" id="reset" type="button">Limpar filtros</button>
+      <div style="background:rgba(79,209,217,.08);border-radius:14px;padding:16px;font-size:.92rem;color:var(--muted)"><b style="color:#fff;display:block;margin-bottom:4px">Tamanhos</b>GGG extra-grande · GG muito grande · G grande · M médio · P pequeno · P- e P= mais pequenos. No camarão, N02 é o maior.</div>
+    </aside>
+    <div style="min-width:0">
+      <div class="shopbar">
+        <div style="display:flex;gap:10px;align-items:center;flex-wrap:wrap">
+          <button class="btn btn-line fbtn" id="openFilters" type="button" style="padding:10px 16px"><svg aria-hidden="true"><use href="#i-filter"/></svg>Filtros</button>
+          <span class="count" id="count"></span>
+        </div>
+        <div style="display:flex;gap:10px;flex-wrap:wrap;flex:1;justify-content:flex-end">
+          <label class="field" for="q" style="flex:1 1 200px;max-width:320px"><svg aria-hidden="true"><use href="#i-search"/></svg><input id="q" type="search" placeholder="Procurar produto" style="width:100%"></label>
+          <label class="field" for="sort"><select id="sort" aria-label="Ordenar"><option value="rel">Destaques</option><option value="asc">Preço: mais baixo</option><option value="desc">Preço: mais alto</option><option value="az">Nome A–Z</option></select></label>
+        </div>
+      </div>
+      <div class="grid" id="grid"></div>
+    </div>
+  </div>
+</section>
+</main>
+<script src="assets/app.js" charset="utf-8"></script>
+</body>
+</html>

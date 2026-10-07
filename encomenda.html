@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="pt">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>A minha encomenda · Kudjima</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Jost:wght@500;600;700;800&family=Source+Sans+3:wght@400;600;700&display=swap">
+<link rel="stylesheet" href="assets/style.css">
+<style>:root{padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}</style>
+</head>
+<body>
+<main id="page" data-page="order" class="page">
+<section class="ptitle"><canvas id="ptCanvas"></canvas><div class="wrap">
+<nav class="crumbs" aria-label="Caminho"><a href="index.html">Início</a><span>/</span><a href="loja.html">Loja</a><span>/</span><span>Encomenda</span></nav>
+<h1>A sua <em style="font-style:normal;color:var(--aqua)">encomenda</em></h1></div></section>
+<section style="padding-top:40px">
+  <div class="wrap order">
+    <div style="min-width:0">
+      <div class="olist" id="olist"></div>
+      <a class="more" href="loja.html" style="margin-top:18px"><svg aria-hidden="true" style="transform:rotate(180deg)"><use href="#i-arrow"/></svg>Continuar a escolher</a>
+    </div>
+    <div class="osum">
+      <form class="form" id="oform" novalidate>
+        <h2>Resumo</h2>
+        <div class="tline"><span><span id="oCount">0</span> artigos · total estimado</span><b id="oTot">0 Kz</b></div>
+        <p class="note">O valor final é confirmado no WhatsApp depois de pesarmos o produto.</p>
+        <div class="two">
+          <label for="oName">Nome<input id="oName" type="text" autocomplete="name"></label>
+          <label for="oZone">Zona<input id="oZone" type="text" placeholder="Ex.: Maianga"></label>
+        </div>
+        <label for="oAddr">Morada ou ponto de referência<input id="oAddr" type="text" autocomplete="street-address"></label>
+        <label for="oDate">Data preferida de entrega<input id="oDate" type="date"></label>
+        <label for="oObs">Observações<textarea id="oObs" placeholder="Ex.: depois das 17h" style="min-height:70px"></textarea></label>
+        <a class="btn btn-wa" id="oSend" href="#"><svg aria-hidden="true"><use href="#i-wa"/></svg>Enviar pedido no WhatsApp</a>
+        <details><summary style="cursor:pointer;font-weight:700;font-size:.88rem;color:var(--card-muted)">Ver a mensagem que vai ser enviada</summary><pre id="oPrev" style="white-space:pre-wrap;font:400 .88rem var(--body);background:#fff;border-radius:12px;padding:12px;margin:10px 0 0;border:1px solid #DCE6EC"></pre></details>
+      </form>
+    </div>
+  </div>
+</section>
+</main>
+<script src="assets/app.js" charset="utf-8"></script>
+</body>
+</html>

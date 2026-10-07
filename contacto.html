@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="pt">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Contacto · Kudjima</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Jost:wght@500;600;700;800&family=Source+Sans+3:wght@400;600;700&display=swap">
+<link rel="stylesheet" href="assets/style.css">
+<style>:root{padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}</style>
+</head>
+<body>
+<main id="page" data-page="contact" class="page">
+<section class="ptitle"><canvas id="ptCanvas"></canvas><div class="wrap">
+<nav class="crumbs" aria-label="Caminho"><a href="index.html">Início</a><span>/</span><span>Contacto</span></nav>
+<h1>Fale <em style="font-style:normal;color:var(--aqua)">connosco</em></h1><p class="lead" style="margin-top:12px">Respondemos pelo WhatsApp com disponibilidade, preço final e hora de entrega.</p></div></section>
+<section>
+  <div class="wrap cgrid">
+    <div style="display:grid;gap:16px">
+      <div class="ccard rv"><span class="ic"><svg aria-hidden="true"><use href="#i-wa"/></svg></span><div><b>WhatsApp</b><div class="big" id="numTxt">944 547 289</div><button class="mini" id="copyNum" type="button">Copiar número</button></div></div>
+      <div class="ccard rv"><span class="ic"><svg aria-hidden="true"><use href="#i-truck"/></svg></span><div><b>Entregas</b><p>Ao domicílio, com hora combinada. Indique a sua zona na mensagem.</p></div></div>
+      <div class="ccard rv"><span class="ic"><svg aria-hidden="true"><use href="#i-card"/></svg></span><div><b>Pagamento</b><p>Transferência bancária, Multicaixa Express ou numerário.</p></div></div>
+    </div>
+    <form class="form rv" id="cform" novalidate>
+      <h2>Envie uma mensagem</h2>
+      <p class="note" style="margin-top:-8px">A mensagem abre no WhatsApp pronta a enviar.</p>
+      <div class="two">
+        <label for="cName">Nome<input id="cName" type="text" autocomplete="name" placeholder="O seu nome"></label>
+        <label for="cZone">Zona<input id="cZone" type="text" placeholder="Ex.: Maianga"></label>
+      </div>
+      <label for="cType">Assunto<select id="cType"><option>Encomenda</option><option>Pedido para restaurante, hotel ou evento</option><option>Disponibilidade de um produto</option><option>Outro assunto</option></select></label>
+      <label for="cMsg">Mensagem<textarea id="cMsg" placeholder="Diga-nos o que precisa"></textarea></label>
+      <p class="err" id="cErr" hidden></p>
+      <a class="btn btn-wa" id="cSend" href="#"><svg aria-hidden="true"><use href="#i-wa"/></svg>Enviar no WhatsApp</a>
+    </form>
+  </div>
+</section>
+<section style="padding-top:0">
+  <div class="wrap" style="max-width:860px">
+    <div class="head"><div><p class="kicker">Perguntas frequentes</p><h2 class="h2">Dúvidas <em>comuns</em></h2></div></div>
+    <div class="faq">
+      <details open><summary>Como faço uma encomenda?</summary><p>Escolha os produtos na loja e carregue em Adicionar. Depois abra a sua encomenda e carregue em "Enviar pedido no WhatsApp". A mensagem vai pronta com a lista e o total. Também pode escrever-nos diretamente.</p></details>
+      <details><summary>Os preços são finais?</summary><p>Os preços da loja são os do nosso catálogo atual. O valor final depende do peso e da disponibilidade, que confirmamos consigo no WhatsApp antes da entrega.</p></details>
+      <details><summary>O produto é fresco ou congelado?</summary><p>Compramos o produto fresco e congelamo-lo logo à chegada, a -18 °C, para manter o sabor e a qualidade até chegar a sua casa.</p></details>
+      <details><summary>Como devo conservar?</summary><p>Guarde no congelador. Descongele no frigorífico, de véspera, e não volte a congelar depois de descongelado.</p></details>
+      <details><summary>Fazem encomendas para restaurantes e eventos?</summary><p>Sim. Escolha o assunto "Pedido para restaurante, hotel ou evento" no formulário e diga-nos as quantidades e a frequência. Preparamos uma proposta.</p></details>
+      <details><summary>Que formas de pagamento aceitam?</summary><p>Transferência bancária, Multicaixa Express ou numerário na entrega.</p></details>
+    </div>
+  </div>
+</section>
+</main>
+<script src="assets/app.js" charset="utf-8"></script>
+</body>
+</html>
