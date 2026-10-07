@@ -1,8 +1,8 @@
 /* Kudjima — shared data, shell (header/footer), order basket, favourites and page logic. */
 (function(){
 "use strict";
-const PHONE = "244944547289";
-const PHONE_TXT = "944 547 289";
+const PHONE = "244944547298";
+const PHONE_TXT = "944 547 298";
 
 /* ---------- Catálogo ---------- */
 // imagem: ficheiro em img/ (troca o ficheiro com o mesmo nome para mudar a foto)
